@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footercontainer{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footertop{
+    width: 100%;
+    height: 170px;
+    display: flex;
+}
+
+.ftleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+.ftleft h3{
+    font-size: 2rem;
+}
+
+.ftright{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+    align-items: center;
+    gap: 1px;
+}
+
+.ftright input{
+    padding-left: 20px;
+    width: 50%;
+    height: 40px;
+}
+
+.ftright button{
+    padding: 12px;
+    background-color: #decd48;
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.footerbottom section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
