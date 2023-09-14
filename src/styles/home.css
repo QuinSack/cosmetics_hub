@@ -49,13 +49,102 @@
 
 .section1text button:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .section2{
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+}
+
+.section2text{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.section2text1{
+    width: 50%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2text1 h5{
+    margin-top: 80px;
+}
+
+.section2text1 h1{
+    font-size: 2rem;
+}
+
+.section2text2{
+    width: 50%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.section2text2 button{
+    width: 20%;
+    padding: 5px;
+    background-color: #f3df6f;
+}
+
+.section2carousel{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+}
+
+.section2carousel div{
+    width: 20%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.section2carousel div button{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+}
+
+.section3{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.section3text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #785050;
+    color: white;
+}
+
+.section3text h1{
+    font-size: 2rem;
+}
+
+.section3text button{
+    padding: 10px;
+    background-color: #f3df6f;
+}
+
+.section3image{
+    width: 50%;
+    background-image: url(../assets/images/home/home5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
