@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.homecontainer{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.section1{
+    width: 100%;
+    height: 580px;
+    background-image: url(../assets/images/home/home1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.section1text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1text h1{
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 20px;
+}
+
+.section1text div{
+    margin-bottom: 40px;
+}
+
+.section1text button{
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.section2{
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+}

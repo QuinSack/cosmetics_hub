@@ -17,7 +17,7 @@
 .headerbottom{
     width: 100%;
     height: 60px;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -38,6 +38,11 @@
     width: 33%;
     height: 100%;
     gap: 30px;
+}
+
+.sectwolink{
+    text-decoration: none;
+    color: black;
 }
 
 .secthree{
