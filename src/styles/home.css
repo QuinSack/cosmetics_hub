@@ -44,10 +44,18 @@
     padding: 15px;
     background-color: black;
     color: white;
+    transition: 0.3s;
+}
+
+.section1text button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .section2{
     width: 100%;
-    height: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
 }

@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { FormEvent, useState } from 'react'
 import '../styles/footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { db } from '../configs/firebase'
+import {collection, addDoc} from 'firebase/firestore'
 
 const Footer = () => {
+
+  const [email, setEmail] = useState<string>("");
+
+  const handleEmailSubmit = async(e: FormEvent) => {
+    e.preventDefault();
+
+    if (!email.trim()){
+      alert ("Please enter a valid email address");
+      return;
+    }
+    
+    const subscriberRef = collection(db, "subscribers");
+    try{
+      const submitEmail = await addDoc(subscriberRef, {email});
+      setEmail("");
+      console.log(submitEmail);
+    }catch(err){
+      console.error(err);
+    }
+  }
   return (
     <div className='footercontainer'>
       <div className='footertop'>
@@ -12,8 +34,8 @@ const Footer = () => {
           <p>Be the first to know about our new arrivals and exclusive offers.</p>
         </section>
         <section className='ftright'>
-          <input type='email' placeholder='Enter your email' />
-          <button>Subscribe <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></button>
+          <input type='email' placeholder='Enter your email' value={email} onChange={(e)=>setEmail(e.target.value)} />
+          <button onClick={(e) => handleEmailSubmit(e)}>Subscribe <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></button>
         </section>
       </div>
       <hr />
