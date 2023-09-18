@@ -19,7 +19,7 @@ const Header = () => {
         <section className='sectwo'>
           <Link to="/about" className='sectwolink'><h4>About Us</h4></Link>
           <h4>Products</h4>
-          <h4>Blog</h4>
+          <Link to="/blogs" className='sectwolink'><h4>Blog</h4></Link>
           <h4>Contact</h4>
         </section>
         <section className='secthree'>
